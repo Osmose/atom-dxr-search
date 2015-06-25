@@ -7,6 +7,8 @@ if they've got the matching tree open within the editor.
 __Note:__ This package requires you to be able to connect to a running DXR
 instance, which usually means you need internet access to use it.
 
+![Screenshot of package](http://www.mkelly.me/atom-dxr-search/screenshot.png)
+
 [Atom]: https://atom.io/
 [DXR]: https://dxr.mozilla.org/
 
