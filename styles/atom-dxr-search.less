@@ -1,0 +1,88 @@
+@import "ui-variables";
+
+.dxr-search {
+    display: flex;
+    flex-direction: column;
+
+    .message {
+        flex: 0 1.4em;
+    }
+
+    .atom-text-editor {
+        flex: 0 2.4em;
+    }
+
+    .result-list-view {
+        flex: 1;
+        overflow-x: hidden;
+
+        .alert {
+            margin-bottom: 0;
+            width: 100%;
+        }
+
+        .show-more {
+            margin-top: 1em;
+        }
+    }
+
+    .list-item {
+        .path {
+            font-size: 1.1em;
+            padding: 3px 0;
+
+            &:hover {
+                background: @background-color-highlight;
+                cursor: pointer;
+            }
+
+            .icon-file-text {
+                margin-right: .3em;
+            }
+        }
+
+        .result-lines {
+            list-style-type: none;
+            padding-left: 0;
+            overflow-y: auto;
+
+            li:hover {
+                background: @background-color-highlight;
+                cursor: pointer;
+
+                pre {
+                    background: @background-color-highlight;
+                }
+            }
+        }
+
+        .result-line-number {
+            width: 4em;
+            text-align: right;
+            margin-right: .5em;
+            float: left;
+            font-size: 1.1em;
+            line-height: 1.4em;
+            padding: 4px 2px 5px 0;
+            background: @inset-panel-background-color;
+            border-right: 1px solid @inset-panel-border-color;
+        }
+
+        .result-line {
+            line-height: 1.4em;
+            padding: 4px 0;
+
+            b {
+                font-weight: bold;
+            }
+
+            pre {
+                background: @overlay-background-color;
+                font-size: 1.1em;
+                padding: 0;
+                word-wrap: normal;
+                overflow: hidden;
+            }
+        }
+    }
+}
