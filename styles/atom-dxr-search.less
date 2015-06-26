@@ -46,12 +46,16 @@
             padding-left: 0;
             overflow-y: auto;
 
-            li:hover {
-                background: @background-color-highlight;
-                cursor: pointer;
+            li {
+                clear: both;
 
-                pre {
+                &:hover {
                     background: @background-color-highlight;
+                    cursor: pointer;
+
+                    pre {
+                        background: @background-color-highlight;
+                    }
                 }
             }
         }
