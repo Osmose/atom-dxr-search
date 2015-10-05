@@ -136,7 +136,6 @@ module.exports = class DXRSearchView extends View
     data =
       q: query
       redirect: false
-      format: 'json'
       case: false
       limit: limit
       offset: @offset
@@ -144,6 +143,7 @@ module.exports = class DXRSearchView extends View
     $.ajax
       url: "#{server}/#{tree}/search",
       data: data,
+      dataType: "json",
       success: (response) =>
         @resultListView.renderResults response.results
         @resultListView.showShowMore() unless response.results.length < 1
